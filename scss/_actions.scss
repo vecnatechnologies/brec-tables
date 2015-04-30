@@ -1,0 +1,154 @@
+.action-set {
+  display:inline-block;
+  float: right;
+  border:1px solid #cfcfcf;
+    .cog {
+        padding:14px 17px;
+    }
+    .action.download {
+        position:relative;
+    }
+    .action {
+        float:left;
+        border-right:1px solid #cfcfcf;
+        &:last-child {
+            border-right:0;
+        }
+        .action-option {
+            display:inline-block;
+            padding:15px 17px;
+            background:#fff;
+            @include transition(background 0.0625s ease-in);
+            &:last-child {
+            }
+            &:hover {
+                background: #454b50;
+                color:white;
+                cursor:pointer;
+            }
+        }
+        .action-option.active {
+            background: #454b50;
+            color: white;
+        }
+        .options {
+            position:absolute;
+            background:white;
+            list-style: none;
+            margin:0;
+            padding:0;
+            z-index: 105;
+            width:150px;
+            border-radius:6px;
+            border:1px solid #dadee0;
+            top:56px;
+            .DTTT_container {
+            float:none;
+            margin:0;
+            position:relative;
+                a {
+                    text-decoration:none;
+                    padding:5px 15px;
+                    color:inherit;
+                    display:block;
+                    // Table tools options
+                    border:none;
+                    margin:0;
+                    box-shadow:none;
+                    background:none;
+                    border-radius:0;
+                    font-size:inherit;
+                    color:inherit !important;
+                    &:hover {
+                        background:#dadee0;
+                    }
+                    embed {
+                        width:150px;
+                        height:34px;
+                    }
+                }
+            }
+        }
+        .ColVis {
+            float:none;
+            margin:0;
+            .ColVis_Button {
+                &:hover {
+                    border:0;
+                    background:inherit;
+                }
+            }
+        }
+    }
+}
+
+.DTTT_print_info {
+    z-index:9999;
+}
+
+ul.ColVis_collection {
+    position:absolute;
+    background:white;
+    list-style: none;
+    margin:0;
+    padding:0;
+    border-radius:6px;
+    border:1px solid #dadee0;
+    // top:81px !important;
+    top:107px !important;
+    width:auto;
+    box-shadow: none;
+    li {
+        padding:5px 15px;
+        border:0;
+        box-shadow:none;
+        margin:0;
+        background:none;
+        font-size:1em;
+        font-family:"proxima nova";
+        color:inherit !important;
+        &:hover {
+            border:none;
+            box-shadow:none;
+            background:#dadee0;
+        }
+        span {
+            span {
+                display:none;
+            }
+        }
+        label {
+            margin:0;
+            font-weight:300;
+            // &:before {
+            //     content: "\f046";
+            //     font-family:"icomoon";
+            //     display:inline-block;
+            //     margin:0 0.5ex 0 -0.5ex;
+            // }
+            input {
+                position:inherit;
+                margin:0 0.5ex 0 -0.5ex;
+            }
+            span {
+                padding:0;
+            }
+        }
+    }
+    li.last {
+        border-top:1px solid #cfcfcf;
+    }
+    // li.checked {
+    //     label {
+    //         &:before {
+    //             content: "\f096";
+    //             font-family:"icomoon";
+    //             display:inline-block;
+    //             margin:0 0.5ex 0 -0.5ex;
+    //         }
+    //     }
+    // }
+}
+div.ColVis_collectionBackground {
+    display:none;
+}

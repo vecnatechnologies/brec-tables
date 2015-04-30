@@ -1,0 +1,54 @@
+// Clear search and show options
+.dataTables_wrapper {
+  clear:both;
+  overflow: auto;
+  .filters {
+    @extend %twelve;
+    @extend %columns;
+    padding:0;
+    .filter-row {
+      clear:both;
+      overflow:auto;
+      margin-bottom:25px;
+        .show-filter {
+          @extend %six;
+          @extend %columns;
+        }
+        .search-filter { 
+          @extend %six;
+          @extend %columns;
+          padding:0;
+          text-align:right;
+          label {
+            margin-top:0;
+            input {
+              margin-left:5px;
+              width:250px;
+            }
+          }
+        }
+        .showing-filter {
+          @extend %six;
+          @extend %columns;
+          padding:0;
+          span {
+            font-weight:bold;
+            &:last-child {
+              font-weight:normal;
+              font-style:italic;
+            }
+        }
+        .dataTables_length {
+          float:left;
+        }
+        .dataTables_info {
+          float:left;
+          margin-top:1em;
+          margin-left:50px;
+        }
+      }
+    }
+    .filter-row.last {
+    }
+  }
+}

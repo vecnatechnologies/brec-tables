@@ -1,0 +1,52 @@
+$odd-row-color: #f0f0f0;
+$even-row-color: #fafafa; 
+$header-row-color:#ddd;
+
+@mixin borders {
+  border-right:1px solid #cfcfcf;
+  border-left:1px solid #cfcfcf;
+}
+
+.dataTable  {
+  th.master-sort {
+    span {
+      display:none;
+      float:right;
+      margin-right:10px;
+    }
+  }
+  th.sorting_desc {
+    background:#d5d5d5 !important;
+    @include borders;
+      span.asc {
+        display:inline-block !important;
+      }
+      span.desc {
+        visibility:hidden;
+      }
+  }
+  th.sorting_asc {
+    background:#d5d5d5 !important;
+    @include borders;
+      span.desc {
+        display:inline-block !important;
+      }
+      span.asc {
+        visibility:hidden;
+      }
+  }
+  tr.even {
+    td.sorting_1,td.sorting_2,td.sorting_3,td.sorting_4,td.sorting_5{
+      background: darken($even-row-color, 3%);
+      @include borders;
+    }
+  }
+  tr.odd {
+    td.sorting_1,td.sorting_2,td.sorting_3,td.sorting_4,td.sorting_5 {
+      background: darken($odd-row-color, 3%);
+      @include borders;
+    }
+  }
+}
+
+  

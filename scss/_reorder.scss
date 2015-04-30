@@ -1,0 +1,17 @@
+// Column reorder styling
+div.DTCR_pointer {
+  width:250px;
+  background:rgba(0,0,0,0.7);
+  border:2px dashed #fff;
+  &:after {
+    content: "\f11a";
+    font-size:64px;
+    font-family:"icomoon";
+    position:absolute;
+    margin:0 0.5ex 0 -0.5ex;
+    color:white;
+    top: 150px;
+    left: 108px;
+    transform: rotate(90deg);
+  }
+}
