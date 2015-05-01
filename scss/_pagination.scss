@@ -1,0 +1,66 @@
+// Pagination
+.top-pagination {
+  margin: 0 0 25px 0;
+  clear:both;
+  overflow:auto;
+  .dataTables_paginate
+  {
+    margin:0;
+  }
+}
+.dataTables_paginate {
+  @extend %twelve;
+  @extend %columns;
+  height:45px;
+  margin: 25px 0 50px;
+  text-align: center;
+  .paginate_button {
+    display: inline-block;
+    background:white;
+    padding: 1ex 1em;
+    // border: solid 1px rgba(0, 144, 191, 0.2);
+    border:1px solid #dbdbdb;
+    border-radius: 1px;
+    text-decoration: none;
+    margin:0px 2px;
+    color:#24a4ce;
+    &:visited {
+      color:#24a4ce;
+    }
+    &:link {
+      color:#0090bf;
+    }
+    &:hover {
+      cursor:pointer;
+      border-color: #00b6f2;
+      background: #00b6f2;
+      color: white;
+    }
+  }
+  .paginate_button.current {
+    border-color: #0090bf;
+    background: #0090bf;
+    color: #fff;
+  }
+  .paginate_button.previous {
+    margin-right: 1em;
+    &:before {
+      content: "\f104 ";
+      font-family: "icomoon";
+      margin-right:5px;
+    }
+  }
+  .paginate_button.previous.disabled {
+    visibility:hidden;
+  }
+  .paginate_button.next {
+    margin-left: 1em;
+    &:after {
+      content: " \f105";
+      font-family: "icomoon";
+    }
+  }
+  .paginate_button.next.disabled {
+    visibility:hidden;
+  }
+}

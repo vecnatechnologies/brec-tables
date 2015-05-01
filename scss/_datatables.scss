@@ -1,0 +1,93 @@
+@mixin sort_desc_asc {
+  background-color:#d5d5d5 !important;
+}
+
+// Fixed Header
+.dataTables_wrapper {
+  margin-bottom:50px;
+}
+.dataTable {
+  margin-top:1em;
+  border-left:1px solid #cfcfcf;
+    border-right:1px solid #cfcfcf;
+  th {
+    padding:2ex 1ex;
+    white-space: nowrap;
+      &:first-child {
+        padding-left:25px;
+      }
+    border-top:1px solid #cfcfcf;
+    &:hover {
+      cursor:pointer;
+    }
+    &:first-child {
+    }
+    &:last-child {
+      // padding-right:25px;
+    }
+  }
+  td {
+    &:first-child {
+      padding-left:25px;
+    }
+  }
+  // CAUSE FOR BROKEN HEADERS
+  // th.sorting_desc {
+  //   &:after {
+  //     content: "\f106";
+  //     font-family: "icomoon";
+  //     float:right;
+  //     margin-right:25px;
+  //   }
+  // }
+  // th.sorting_asc {
+  //   &:after {
+  //     content: "\f107";
+  //     font-family: "icomoon";
+  //     float:right;
+  //     margin-right:25px;
+  //   }
+  // }
+  // END CASUE FOR BROKEN HEADERS
+}
+
+// fixed height styling
+.dataTables_scrollHeadInner {
+  
+}
+.dataTables_scroll {
+  border-bottom:1px solid #cfcfcf;
+  table {
+    border-left:1px solid #cfcfcf;
+    border-right:1px solid #cfcfcf;
+  }
+  .dataTables_scrollBody {
+    table {
+      margin-top:0;
+      thead {
+        tr {
+          height:0px !important;
+          border-bottom:none !important;
+          th {
+            // padding:0;
+            // border-top:0;
+          }
+          th.sorting_desc {
+            &:after {
+              content: "";
+            }
+          }
+          th.sorting_asc {
+            &:after {
+              content: "";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dataTables_scrollFootInner table{
+  margin-top:0;
+}

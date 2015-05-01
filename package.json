@@ -1,0 +1,30 @@
+{
+  "name": "brec-tables",
+  "version": "0.1.0",
+  "description": "Beautiful Responsive Ergonomic Configurable library for HTML tables",
+  "scripts": {
+    "postinstall": "gulp install"
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vecnatechnologies/brec-tables"
+  },
+  "contributors": [
+    {
+      "name": "Matthew Willis",
+      "email": "matt.willis@vecna.com"
+    },
+    {
+      "name": "Gabriel Schervish",
+      "email": "gabriel.schervish@vecna.com"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-concat": "^2.5.2",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-run": "^1.6.7"
+  }
+}

@@ -1,0 +1,55 @@
+.DTFC_ScrollWrapper {
+  // width:50%;
+  // border:1px solid #cfcfcf;
+  // border-left:1px solid #cfcfcf;
+}
+
+// gives the effect of the fixed column (left)
+.DTFC_LeftBodyWrapper {
+  background:white;
+  td {
+    &:first-child {
+      padding-left:25px;
+    }
+  }
+}
+
+// gives the effect of the fixed column (right)  
+.DTFC_RightBodyWrapper { 
+  background:white;
+  td {
+    &:first-child {
+      padding-left:25px;
+    }
+  }
+}
+
+// adds pin for fixed column (left)
+.DTFC_LeftHeadWrapper {
+  th {
+    &:before {
+      content: "\f08d";
+      font-family:"FontAwesome";
+      display:inline-block;
+      margin-right:5px;
+    }
+  }
+}
+
+// adds pin for fixed column (right)
+.DTFC_RightHeadWrapper {
+  th {
+    &:before {
+      content: "\f08d";
+      font-family:"FontAwesome";
+      display:inline-block;
+      margin-right:5px;
+    }
+  }
+}
+
+// Patient Queue fixed right
+
+.patient-queue-fixed-right {
+
+}
