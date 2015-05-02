@@ -1,6 +1,6 @@
 {
   "name": "brec-tables",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Beautiful Responsive Ergonomic Configurable library for HTML tables",
   "scripts": {
     "postinstall": "gulp install"
@@ -21,7 +21,7 @@
     }
   ],
   "license": "ISC",
-  "dependencies" : {
+  "dependencies": {
     "path": "0.11.14",
     "brec-base": "^0.1.0"
   },
