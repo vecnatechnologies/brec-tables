@@ -3,7 +3,7 @@
   "version": "0.2.2",
   "description": "Beautiful Responsive Ergonomic Configurable library for HTML tables",
   "scripts": {
-    "postinstall": "gulp install"
+    "prepublish": "gulp install"
   },
   "main": "index.js",
   "repository": {
@@ -25,7 +25,7 @@
     "path": "0.11.14",
     "brec-base": "^0.1.0"
   },
-  "peerDependencies": {
+  "devDependencies": {
     "gulp": "^3.8.11",
     "gulp-load-plugins": "^0.10.0",
     "gulp-concat": "^2.5.2",
