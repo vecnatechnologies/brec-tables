@@ -1,6 +1,6 @@
 {
   "name": "brec-tables",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Beautiful Responsive Ergonomic Configurable library for HTML tables",
   "scripts": {
     "postinstall": "gulp install"
