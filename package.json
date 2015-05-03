@@ -22,8 +22,9 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "path": "0.11.14",
-    "brec-base": "^0.1.0"
+    "brec-base": "^0.1.0",
+    "datatables": "^1.10.7",
+    "path": "0.11.14"
   },
   "devDependencies": {
     "gulp": "^3.8.11",

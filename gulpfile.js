@@ -4,12 +4,10 @@ var gulp = require('gulp'),
 
 var vendorPath = 'js/vendor/';
 
-// TO-DO fix AMD error in tableTools.js
-
 var paths = [
   vendorPath + 'datatables/media/js/jquery.dataTables.js',
   vendorPath + 'datatables-responsive/js/dataTables.responsive.js',
-  // vendorPath + 'datatables-tabletools/js/dataTables.tableTools.js',
+  vendorPath + 'datatables-tabletools/js/dataTables.tableTools.js',
   vendorPath + 'datatables-colreorder/js/dataTables.colRedorder.js',
   vendorPath + 'datatables-colvis/js/dataTables.colVis.js',
   vendorPath + 'jquery-datatables-column-filter/jquery.dataTables.columnFilter.js',
