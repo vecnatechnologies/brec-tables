@@ -17,7 +17,7 @@ var paths = [
 
 gulp.task('bower', function(cb) {
  return gulp.src('')
-  .pipe($.run('bower install'))
+  .pipe($.run('bower install -q --allow-root'))
 })
 
 gulp.task('datatable', ['bower'], function() {
