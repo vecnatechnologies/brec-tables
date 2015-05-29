@@ -2,82 +2,55 @@ $odd-row-color: #f0f0f0;
 $even-row-color: #fafafa;
 $header-row-color:#ddd;
 
-body {
+
+.filters {
+  h2 {
+    background:#f0f0f0;
+    padding:10px;
+    &:hover {
+      cursor:pointer;
+    }
+  }
+}
+
+.table-data {
   -webkit-user-select: all;
   -moz-user-select: all;
   -ms-user-select: all;
   user-select: all;
-  padding:25px;
-  .page-content {
-    @extend %twelve;
-    @extend %columns;
-    background:#f0f0f0;
-    .filters {
-      h2 {
-        background:#f0f0f0;
-        padding:10px;
+  background:white;
+  tr {
+    border-bottom:1px solid #cfcfcf;
+    td {
+      white-space: nowrap;
+      a {
+        text-decoration:none;
         &:hover {
-          cursor:pointer;
+          text-decoration: underline;
         }
       }
-    }
-    .header {
-      @extend %twelve;
-      @extend %columns;
-      margin:25px 0px;
-      padding:0;
-      h1 {
-        display:inline-block;
-        margin:0;
+      span.ssn {
+        display:block;
+        font-size:0.875em;
       }
     }
+  }
+  tr{
+    background: white;
+  }
+  tr:nth-child(even) {
+    border-bottom:1px solid darken($odd-row-color, 7%);
+    &:hover {
+      background:$odd-row-color;
+    }
+  }
+  tr:nth-child(odd) {
+    border-bottom:1px solid darken($odd-row-color, 7%);
+    &:hover {
+      background:$odd-row-color;
+    }
+  }
+  tfoot {
 
   }
 }
-
-
-    .table-data {
-      background:white;
-      tr {
-        border-bottom:1px solid #cfcfcf;
-        td {
-          white-space: nowrap;
-          // CAUSE FOR SCROLL ISSUE WITH FIXED COLUMN
-          // &:first-child {
-          //   padding-left:25px;
-          // }
-          // &:last-child {
-          //   padding-right:25px;
-          // }
-          // END CAUSE FOR SCROLL ISSUE WITH FIXED COLUMN
-          a {
-            text-decoration:none;
-            &:hover {
-              text-decoration: underline;
-            }
-          }
-          span.ssn {
-            display:block;
-            font-size:0.875em;
-          }
-        }
-      }
-      tr{
-        background: white;
-      }
-      tr:nth-child(even) {
-        border-bottom:1px solid darken($odd-row-color, 7%);
-        &:hover {
-          background:$odd-row-color;
-        }
-      }
-      tr:nth-child(odd) {
-        border-bottom:1px solid darken($odd-row-color, 7%);
-        &:hover {
-          background:$odd-row-color;
-        }
-      }
-      tfoot {
-        // display: table-header-group;
-      }
-    }
