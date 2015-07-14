@@ -94,8 +94,6 @@ ul.ColVis_collection {
     padding:0;
     border-radius:6px;
     border:1px solid #dadee0;
-    // top:81px !important;
-    top:107px !important;
     width:auto;
     box-shadow: none;
     li {
@@ -120,12 +118,6 @@ ul.ColVis_collection {
         label {
             margin:0;
             font-weight:300;
-            // &:before {
-            //     content: "\f046";
-            //     font-family:"icomoon";
-            //     display:inline-block;
-            //     margin:0 0.5ex 0 -0.5ex;
-            // }
             input {
                 position:inherit;
                 margin:0 0.5ex 0 -0.5ex;
@@ -138,16 +130,6 @@ ul.ColVis_collection {
     li.last {
         border-top:1px solid #cfcfcf;
     }
-    // li.checked {
-    //     label {
-    //         &:before {
-    //             content: "\f096";
-    //             font-family:"icomoon";
-    //             display:inline-block;
-    //             margin:0 0.5ex 0 -0.5ex;
-    //         }
-    //     }
-    // }
 }
 div.ColVis_collectionBackground {
     display:none;
