@@ -19053,8 +19053,10 @@ else if ( jQuery && !jQuery.fn.dataTable.TableTools ) {
 
 
 })(window, document);
+
+
 /*! ColReorder 1.1.3
- * Â©2010-2014 SpryMedia Ltd - datatables.net/license
+ * ©2010-2014 SpryMedia Ltd - datatables.net/license
  */
 
 /**
@@ -20426,7 +20428,6 @@ else if ( jQuery && !jQuery.fn.dataTable.ColReorder ) {
 
 })(window, document);
 
-
 /*! ColVis 1.1.2
  * ©2010-2015 SpryMedia Ltd - datatables.net/license
  */
@@ -20435,7 +20436,7 @@ else if ( jQuery && !jQuery.fn.dataTable.ColReorder ) {
  * @summary     ColVis
  * @description Controls for column visibility in DataTables
  * @version     1.1.2
- * @file        dataTables.colReorder.js
+ * @file        dataTables.colVis.js
  * @author      SpryMedia Ltd (www.sprymedia.co.uk)
  * @contact     www.sprymedia.co.uk/contact
  * @copyright   Copyright 2010-2015 SpryMedia Ltd.
@@ -20757,7 +20758,7 @@ ColVis.prototype = {
 			this.s.restore = this.s.sRestore;
 		}
 
-		// CamelCase to Hungarian for the column groups 
+		// CamelCase to Hungarian for the column groups
 		var groups = this.s.groups;
 		var hungarianGroups = this.s.aoGroups;
 		if ( groups ) {
